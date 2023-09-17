@@ -14,25 +14,35 @@
     <div class="container">
       <div class="form-box">
         <h1 id="title">Sign Up</h1>
-        <form action="">
+        <form onsubmit="signup()">
           <div class="input-group">
             <div class="input-field" id="nameField">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name" />
+              <input
+                type="text"
+                placeholder="Name"
+                name="username"
+                id="username"
+              />
             </div>
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" name="email" id="email" />
             </div>
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+              />
             </div>
             <p>Foger password <a href="#">Click Here!</a></p>
           </div>
           <div class="btn-field">
-            <button type="button" id="signupBtn">Sign Up</button>
-            <button type="button" id="signinBtn" class="disable">
+            <button type="submit" id="signupBtn">Sign Up</button>
+            <button type="submit" id="signinBtn" class="disable">
               Sign In
             </button>
           </div>
@@ -41,5 +51,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
